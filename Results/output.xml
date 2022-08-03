@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.6 on win32)" generated="20220803 12:22:49.326" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.6 on win32)" generated="20220803 12:28:10.247" rpa="false" schemaversion="3">
 <suite id="s1" name="Me" source="C:\Users\Gejmer\Desktop\development\frome\Tests\me.robot">
 <test id="s1-t1" name="This is a test" line="18">
 <kw name="Test Web Begin" library="common" type="SETUP">
@@ -7,169 +7,180 @@
 <arg>${url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220803 12:22:49.527" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.com'.</msg>
-<status status="PASS" starttime="20220803 12:22:49.527" endtime="20220803 12:22:52.210"/>
+<msg timestamp="20220803 12:28:10.448" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.com'.</msg>
+<status status="PASS" starttime="20220803 12:28:10.448" endtime="20220803 12:28:13.528"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220803 12:22:52.210" endtime="20220803 12:22:52.340"/>
+<status status="PASS" starttime="20220803 12:28:13.528" endtime="20220803 12:28:13.662"/>
 </kw>
-<status status="PASS" starttime="20220803 12:22:49.527" endtime="20220803 12:22:52.340"/>
+<status status="PASS" starttime="20220803 12:28:10.448" endtime="20220803 12:28:13.662"/>
 </kw>
 <kw name="Search for the item" library="app">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>nav-logo</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220803 12:22:52.341" endtime="20220803 12:22:52.389"/>
+<status status="PASS" starttime="20220803 12:28:13.663" endtime="20220803 12:28:13.707"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath = //*[@id="nav-search-bar-form"]/div[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:52.389" level="INFO">Clicking element 'xpath = //*[@id="nav-search-bar-form"]/div[2]'.</msg>
-<status status="PASS" starttime="20220803 12:22:52.389" endtime="20220803 12:22:52.476"/>
+<msg timestamp="20220803 12:28:13.707" level="INFO">Clicking element 'xpath = //*[@id="nav-search-bar-form"]/div[2]'.</msg>
+<status status="PASS" starttime="20220803 12:28:13.707" endtime="20220803 12:28:13.794"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>twotabsearchtextbox</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220803 12:22:52.520" level="INFO">Element 'twotabsearchtextbox' is displayed.</msg>
-<status status="PASS" starttime="20220803 12:22:52.476" endtime="20220803 12:22:52.520"/>
+<msg timestamp="20220803 12:28:13.836" level="INFO">Element 'twotabsearchtextbox' is displayed.</msg>
+<status status="PASS" starttime="20220803 12:28:13.794" endtime="20220803 12:28:13.836"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>twotabsearchtextbox</arg>
 <arg>iphone Xs</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:52.521" level="INFO">Typing text 'iphone Xs' into text field 'twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20220803 12:22:52.520" endtime="20220803 12:22:52.596"/>
+<msg timestamp="20220803 12:28:13.836" level="INFO">Typing text 'iphone Xs' into text field 'twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20220803 12:28:13.836" endtime="20220803 12:28:13.912"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>nav-search-submit-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:52.596" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
-<status status="PASS" starttime="20220803 12:22:52.596" endtime="20220803 12:22:54.900"/>
+<msg timestamp="20220803 12:28:13.912" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20220803 12:28:13.912" endtime="20220803 12:28:16.284"/>
 </kw>
-<status status="PASS" starttime="20220803 12:22:52.340" endtime="20220803 12:22:54.900"/>
+<status status="PASS" starttime="20220803 12:28:13.663" endtime="20220803 12:28:16.285"/>
 </kw>
 <kw name="Order the item" library="app">
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${desired}</var>
 <arg>xpath =//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[4]/div/div/div/div/div/div[1]</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20220803 12:22:54.930" level="INFO">${desired} = &lt;selenium.webdriver.remote.webelement.WebElement (session="436f8265853f09162d25cec757c7e7cf", element="3351dcd2-04f7-439c-a2a1-b61c7845184a")&gt;</msg>
-<status status="PASS" starttime="20220803 12:22:54.901" endtime="20220803 12:22:54.930"/>
+<msg timestamp="20220803 12:28:16.324" level="INFO">${desired} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2bde445cf32c22e05cd2ec58418a251b", element="8be7c06c-e61c-4058-b1fa-f76289229471")&gt;</msg>
+<status status="PASS" starttime="20220803 12:28:16.286" endtime="20220803 12:28:16.324"/>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <var>${elements_on_page}</var>
 <arg>xpath= //*[@id="search"]/div[1]</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20220803 12:22:54.940" level="INFO">${elements_on_page} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="436f8265853f09162d25cec757c7e7cf", element="87ff5025-1f4b-481d-a831-314985af7457")&gt;]</msg>
-<status status="PASS" starttime="20220803 12:22:54.930" endtime="20220803 12:22:54.940"/>
+<msg timestamp="20220803 12:28:16.334" level="INFO">${elements_on_page} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="2bde445cf32c22e05cd2ec58418a251b", element="9d7c4c25-fe3b-4832-8ddd-11b47de3440d")&gt;]</msg>
+<status status="PASS" starttime="20220803 12:28:16.324" endtime="20220803 12:28:16.334"/>
 </kw>
 <for flavor="IN">
 <var>${elements}</var>
 <value>${elements_on_page}</value>
 <iter>
-<var name="${elements}">[&lt;selenium.webdriver.remote.webelement.WebElement (session="436f8265853f09162d25cec757c7e7cf", element="87ff5025-1f4b-481d-a831-314985af7457")&gt;]</var>
+<var name="${elements}">[&lt;selenium.webdriver.remote.webelement.WebElement (session="2bde445cf32c22e05cd2ec58418a251b", element="9d7c4c25-fe3b-4832-8ddd-11b47de3440d")&gt;]</var>
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${item}</var>
 <arg>${elements}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20220803 12:22:54.941" level="INFO">${item} = &lt;selenium.webdriver.remote.webelement.WebElement (session="436f8265853f09162d25cec757c7e7cf", element="87ff5025-1f4b-481d-a831-314985af7457")&gt;</msg>
-<status status="PASS" starttime="20220803 12:22:54.941" endtime="20220803 12:22:54.941"/>
+<msg timestamp="20220803 12:28:16.335" level="INFO">${item} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2bde445cf32c22e05cd2ec58418a251b", element="9d7c4c25-fe3b-4832-8ddd-11b47de3440d")&gt;</msg>
+<status status="PASS" starttime="20220803 12:28:16.334" endtime="20220803 12:28:16.335"/>
 </kw>
-<status status="PASS" starttime="20220803 12:22:54.941" endtime="20220803 12:22:54.941"/>
+<status status="PASS" starttime="20220803 12:28:16.334" endtime="20220803 12:28:16.335"/>
 </iter>
-<status status="PASS" starttime="20220803 12:22:54.940" endtime="20220803 12:22:54.941"/>
+<status status="PASS" starttime="20220803 12:28:16.334" endtime="20220803 12:28:16.335"/>
 </for>
-<status status="PASS" starttime="20220803 12:22:54.901" endtime="20220803 12:22:54.941"/>
+<status status="PASS" starttime="20220803 12:28:16.286" endtime="20220803 12:28:16.335"/>
 </kw>
 <kw name="Add to cart" library="app">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath =//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[4]/div/div/div/div/div/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:54.942" level="INFO">Clicking element 'xpath =//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[4]/div/div/div/div/div/div[1]'.</msg>
-<status status="PASS" starttime="20220803 12:22:54.942" endtime="20220803 12:22:58.015"/>
+<msg timestamp="20220803 12:28:16.336" level="INFO">Clicking element 'xpath =//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[4]/div/div/div/div/div/div[1]'.</msg>
+<status status="PASS" starttime="20220803 12:28:16.335" endtime="20220803 12:28:18.817"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:addToCart_feature_div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:58.016" level="INFO">Clicking element 'id:addToCart_feature_div'.</msg>
-<status status="PASS" starttime="20220803 12:22:58.015" endtime="20220803 12:22:58.113"/>
+<msg timestamp="20220803 12:28:18.818" level="INFO">Clicking element 'id:addToCart_feature_div'.</msg>
+<status status="PASS" starttime="20220803 12:28:18.817" endtime="20220803 12:28:18.927"/>
 </kw>
-<status status="PASS" starttime="20220803 12:22:54.942" endtime="20220803 12:22:58.113"/>
+<status status="PASS" starttime="20220803 12:28:16.335" endtime="20220803 12:28:18.927"/>
 </kw>
 <kw name="Search for a case" library="app">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:nav-logo-sprites</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:58.114" level="INFO">Clicking element 'id:nav-logo-sprites'.</msg>
-<status status="PASS" starttime="20220803 12:22:58.114" endtime="20220803 12:22:59.224"/>
+<msg timestamp="20220803 12:28:18.928" level="INFO">Clicking element 'id:nav-logo-sprites'.</msg>
+<status status="PASS" starttime="20220803 12:28:18.928" endtime="20220803 12:28:20.123"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:twotabsearchtextbox</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:59.224" level="INFO">Clicking element 'id:twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20220803 12:22:59.224" endtime="20220803 12:22:59.342"/>
+<msg timestamp="20220803 12:28:20.123" level="INFO">Clicking element 'id:twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20220803 12:28:20.123" endtime="20220803 12:28:20.226"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:twotabsearchtextbox</arg>
 <arg>iphone xs case</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220803 12:22:59.342" level="INFO">Typing text 'iphone xs case' into text field 'id:twotabsearchtextbox'.</msg>
-<status status="PASS" starttime="20220803 12:22:59.342" endtime="20220803 12:22:59.446"/>
+<msg timestamp="20220803 12:28:20.227" level="INFO">Typing text 'iphone xs case' into text field 'id:twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20220803 12:28:20.226" endtime="20220803 12:28:20.344"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220803 12:23:02.446" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220803 12:22:59.446" endtime="20220803 12:23:02.446"/>
+<msg timestamp="20220803 12:28:23.347" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220803 12:28:20.344" endtime="20220803 12:28:23.347"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:nav-search-submit-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:23:02.446" level="INFO">Clicking element 'id:nav-search-submit-button'.</msg>
-<status status="PASS" starttime="20220803 12:23:02.446" endtime="20220803 12:23:03.929"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath= //*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220803 12:23:03.929" endtime="20220803 12:23:03.950"/>
+<msg timestamp="20220803 12:28:23.347" level="INFO">Clicking element 'id:nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20220803 12:28:23.347" endtime="20220803 12:28:24.967"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220803 12:23:03.951" level="INFO">Clicking element 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]'.</msg>
-<status status="PASS" starttime="20220803 12:23:03.951" endtime="20220803 12:23:04.041"/>
+<msg timestamp="20220803 12:28:24.967" level="INFO">Clicking element 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]'.</msg>
+<status status="PASS" starttime="20220803 12:28:24.967" endtime="20220803 12:28:25.099"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220803 12:23:09.049" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220803 12:23:04.042" endtime="20220803 12:23:09.049"/>
+<msg timestamp="20220803 12:28:30.101" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220803 12:28:25.099" endtime="20220803 12:28:30.101"/>
 </kw>
-<status status="PASS" starttime="20220803 12:22:58.114" endtime="20220803 12:23:09.049"/>
+<status status="PASS" starttime="20220803 12:28:18.928" endtime="20220803 12:28:30.102"/>
+</kw>
+<kw name="Add to cart too" library="app">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:add-to-cart-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220803 12:28:30.105" level="INFO">Clicking element 'id:add-to-cart-button'.</msg>
+<msg timestamp="20220803 12:28:30.720" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220803 12:28:30.720" level="FAIL">Element with locator 'id:add-to-cart-button' not found.</msg>
+<status status="FAIL" starttime="20220803 12:28:30.104" endtime="20220803 12:28:30.720"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>test is done for now</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220803 12:28:30.720" endtime="20220803 12:28:30.720"/>
+</kw>
+<status status="FAIL" starttime="20220803 12:28:30.103" endtime="20220803 12:28:30.720"/>
 </kw>
 <kw name="Test Ends up" library="common" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220803 12:23:09.049" endtime="20220803 12:23:11.393"/>
+<status status="PASS" starttime="20220803 12:28:30.720" endtime="20220803 12:28:32.910"/>
 </kw>
-<status status="PASS" starttime="20220803 12:23:09.049" endtime="20220803 12:23:11.393"/>
+<status status="PASS" starttime="20220803 12:28:30.720" endtime="20220803 12:28:32.910"/>
 </kw>
 <tag>this is a test</tag>
-<status status="PASS" starttime="20220803 12:22:49.527" endtime="20220803 12:23:11.393"/>
+<status status="FAIL" starttime="20220803 12:28:10.448" endtime="20220803 12:28:32.910">Element with locator 'id:add-to-cart-button' not found.</status>
 </test>
 <doc>Lets see what ypu can do here</doc>
-<status status="PASS" starttime="20220803 12:22:49.326" endtime="20220803 12:23:11.393"/>
+<status status="FAIL" starttime="20220803 12:28:10.247" endtime="20220803 12:28:32.910"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">this is a test</stat>
+<stat pass="0" fail="1" skip="0">this is a test</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Me">Me</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Me">Me</stat>
 </suite>
 </statistics>
 <errors>

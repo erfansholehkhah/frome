@@ -29,7 +29,8 @@ Search for a case
     input text     id:twotabsearchtextbox  iphone xs case
     sleep  3s
     click element  id:nav-search-submit-button
-    wait until page contains element  xpath= //*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]
+    #wait until page contains element  xpath= //*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]
     click element  xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]
     sleep  5s
-#Add to cart
+
+
